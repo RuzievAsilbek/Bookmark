@@ -1,3 +1,52 @@
+/* FONTS-FACE */
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/") format("woff2"),
+      url("/fonts/Rubik-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-SemiBold.woff2") format("woff2"),
+      url("/fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Bold.woff2") format("woff2"),
+      url("/fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Regular.woff2") format("woff2"),
+      url("/fonts/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/Rubik-Medium.woff2") format("woff2"),
+      url("/fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,8 +66,9 @@ body {
   font-size: 16px;
   padding: 0;
   margin: 0;
-  line-height: 1.5;
-  font-family: "Arial", sans-serif;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  font-family: "Rubik", "Arial", sans-serif;
   height: 100%;
   background-color: #fff;
   color: #222;
@@ -29,7 +79,7 @@ img {
   height: auto;
 }
 
-/* AUTOFILL STYLE */
+/* AUTOFILL STYLE
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -43,7 +93,7 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: inherit;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -89,7 +139,7 @@ select:-webkit-autofill:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/img/Wall.jpg);
+  background-image: url(//fonts/img/Wall.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -98,7 +148,7 @@ select:-webkit-autofill:focus {
   display: flex;
   border: 20px ridge rgb(221, 91, 15);
   box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.8);
-  background-image: url(/img/interior.jpg);
+  background-image: url(//fonts/img/interior.jpg);
   background-size: cover;
   background-position: center center;
 }
