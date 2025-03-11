@@ -1,0 +1,90 @@
+/* GLOBAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Arial", sans-serif;
+  height: 100%;
+  background-color: #fff;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* MAIN-CONTENT */
+.main-content {
+  flex-grow: 1;
+}
+
+.wall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/Wall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rom {
+  display: flex;
+  border: 20px ridge rgb(221, 91, 15);
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.8);
+  background-image: url(/img/interior.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.tabaqa {
+  width: 150px;
+  height: 300px;
+  border: 20px ridge rgb(221, 91, 15);
+  background-color: rgb(0, 0, 0, 0.6);
+  transition: transform 1s ease;
+}
+
+
+.tabaqa-lift {
+  transform-origin: left center;
+}
+
+.tabaqa-right {
+  transform-origin: right center;
+}
+
+
+.rom:hover .tabaqa-lift {
+  transform: perspective(2000px) rotateY(-125deg);
+}
+
+.rom:hover .tabaqa-right {
+  transform: perspective(2000px) rotateY(125deg);
+}
