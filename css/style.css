@@ -1,3 +1,13 @@
+/* CUSTOM-PROPS */
+:root {
+  --blue: #5267df;
+  --red: #fa5959;
+  --text-color: #242a45;
+  --text-color-75: rgba(36, 42, 69, 0.75);
+  --text-color-50: rgba(36, 42, 69, 0.5);
+}
+
+
 /* FONTS-FACE */
 @font-face {
   font-family: "Rubik";
@@ -71,7 +81,7 @@ body {
   font-family: "Rubik", "Arial", sans-serif;
   height: 100%;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color-50);
 }
 
 img {
@@ -133,48 +143,4 @@ select:-webkit-autofill:focus {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
-}
-
-.wall {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(//fonts/img/Wall.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.rom {
-  display: flex;
-  border: 20px ridge rgb(221, 91, 15);
-  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.8);
-  background-image: url(//fonts/img/interior.jpg);
-  background-size: cover;
-  background-position: center center;
-}
-
-.tabaqa {
-  width: 150px;
-  height: 300px;
-  border: 20px ridge rgb(221, 91, 15);
-  background-color: rgb(0, 0, 0, 0.6);
-  transition: transform 1s ease;
-}
-
-
-.tabaqa-lift {
-  transform-origin: left center;
-}
-
-.tabaqa-right {
-  transform-origin: right center;
-}
-
-
-.rom:hover .tabaqa-lift {
-  transform: perspective(2000px) rotateY(-125deg);
-}
-
-.rom:hover .tabaqa-right {
-  transform: perspective(2000px) rotateY(125deg);
 }
