@@ -126,3 +126,67 @@ select:-webkit-autofill:focus {
 .main-content {
   flex-grow: 1;
 }
+/* BUTTON */
+.button {
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 22px;
+  border: 2px solid transparent;
+  line-height: 2;
+  font-weight: 500;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+.button--red {
+  background-color: var(--red);
+  color: #fff;
+}
+
+.button--red:hover {
+  background-color: #fff;
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.button--blue {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.button--blue:hover {
+  background-color: #fff;
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.button--grey {
+  background-color: #f7f7f7;
+  color: var(--text-color);
+}
+
+.button--grey:hover {
+  background-color: #fff;
+  color: var(--text-color);
+  border-color: #5b6074;
+}
+
+.button--block {
+  display: block;
+  width: 100%;
+}
+
+
+.button--site-header {
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  padding: 10px 31px;
+}
