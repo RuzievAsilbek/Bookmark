@@ -248,6 +248,36 @@ select:-webkit-autofill:focus {
   opacity: 0.6;
 }
 
+/* SECTION */
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.section__info {
+  width: 100%;
+  max-width: 540px;
+  margin-bottom: 48px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.section__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 52px;
+  font-weight: 500;
+  color: var(--text-color);
+  letter-spacing: -0.1px;
+}
+
+.section__decsription {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 /* SITE-HEADER */
 .site-header {
   padding-top: 48px;
