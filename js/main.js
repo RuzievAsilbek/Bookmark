@@ -1,5 +1,5 @@
 const elsTabItem = document.querySelectorAll('.tabs__item')
-const elsTabPanel = document.querySelectorAll('.tabs__panel')
+const elsTabPanel = document.querySelectorAll('.tabpanels__item')
 const elsTabLink = document.querySelectorAll('.js-tabs-link')
 
 
@@ -13,7 +13,7 @@ function deactivateTabItems () {
 function deactivateTabPanels () {
 
   elsTabPanel.forEach(function (elTabsPanel) {
-    elTabsPanel.classList.remove('tabs__panel--active');
+    elTabsPanel.classList.remove('tabpanels__item--active');
   })
 }
 
@@ -35,7 +35,7 @@ elsTabLink.forEach(function (elTabLink) {
     // Show active tab panel
     /* const elTargetPanel = document.querySelector(`#${elTabLink.href.split('#')[1]}`); */
     const elTargetPanel = document.querySelector(elTabLink.dataset.tabTarget);
-    elTargetPanel.classList.add('tabs__panel--active');
+    elTargetPanel.classList.add('tabpanels__item--active');
   })
 
 })
