@@ -49,10 +49,24 @@ elsTabLink.forEach(function (elTabLink) {
 
 })
 
+// elsAccordionItemToggler.forEach(function (elAccordionItemToggler) {
+//   elAccordionItemToggler.addEventListener('click', function () {
+//     closeAccordoionItems();
+
+//     elAccordionItemToggler.closest('.accordion__item').classList.add('accordion__item--open');
+//   })
+// })
+
 elsAccordionItemToggler.forEach(function (elAccordionItemToggler) {
   elAccordionItemToggler.addEventListener('click', function () {
-    closeAccordoionItems();
+    let parentItem = elAccordionItemToggler.closest('.accordion__item');
 
-    elAccordionItemToggler.closest('.accordion__item').classList.add('accordion__item--open');
-  })
-})
+    // Agar allaqachon ochiq bo'lsa, yopamiz
+    if (parentItem.classList.contains('accordion__item--open')) {
+      parentItem.classList.remove('accordion__item--open');
+    } else {
+      closeAccordoionItems(); // Barcha ochiq bo‘limlarni yopish
+      parentItem.classList.add('accordion__itsem--open'); // Joriy bo‘limni ochish
+    }
+  });
+});
