@@ -66,7 +66,7 @@ elsAccordionItemToggler.forEach(function (elAccordionItemToggler) {
       parentItem.classList.remove('accordion__item--open');
     } else {
       closeAccordoionItems(); // Barcha ochiq bo‘limlarni yopish
-      parentItem.classList.add('accordion__itsem--open'); // Joriy bo‘limni ochish
+      parentItem.classList.add('accordion__item--open'); // Joriy bo‘limni ochish
     }
   });
 });
